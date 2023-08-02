@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+/* h1>div{
+    display: inline-block;
+    height: 4px;
+    width: 100px;
+    background-color: black;
+
+} */
+h1::before{
+    content: "";
+    display: inline-block;
+    height: 4px;
+    width: 100px;
+    background-color: yellow;
+    margin-bottom: 5px;
+    border: 1px solid black;
+}
+h1::after{
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 4px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+h1{
+    text-align: center;
+}
+h1:hover::before{
+    width: 8px;
+}
+h1:hover{
+    border-bottom: 4px solid red;
+}
+
+.float-parent{
+    background-color: green;
+    /* overflow: hidden; */
+    /* overflow: auto; */
+}
+.left, .right{
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    position: relative;
+    bottom: 50px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+/* CLEARFIX */
+.clearfix:after{
+    content: "";
+    clear: both;
+    display: table;
+}

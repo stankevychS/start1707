@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    /* display: flex;
+    display: inline-flex; */
+}
+.inline-d-flex, .d-flex{
+    padding: 10px;
+    background-color: orange;   
+    margin-bottom: 10px;
+}
+.inline-d-flex{
+    display: inline-flex;
+    margin-left: 20px;
+}
+.d-flex{
+    display: flex;
+}
+.inline-d-flex>div{
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+}
+.d-flex>div{
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+}
+.inner{
+    padding: 20px;
+    background-color: red;
+}
+
+
+
+
+.d-flex2{
+    padding: 10px;
+    background-color: rgb(103, 255, 9);   
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+
+}
+.d-flex2{
+    display: flex;
+}
+.d-flex2>div{
+    background-color: rgb(255, 0, 242);
+    margin: 10px;
+    padding: 10px;
+    width: 1000px;
+}
+
+
+
+
+.d-flex3{
+    padding: 10px;
+    background-color: rgb(103, 255, 9);   
+    margin-bottom: 10px;
+    flex-wrap: wrap-reverse;
+}
+.d-flex3{
+    display: flex;
+}
+.d-flex3>div{
+    background-color: rgb(255, 0, 242);
+    margin: 10px;
+    padding: 10px;
+    width: 1000px;
+}
+
+
+.d-flex4{
+    padding: 10px;
+    background-color: rgb(103, 255, 9);   
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.d-flex4{
+    display: flex;
+}
+.d-flex4>div{
+    background-color: rgb(255, 0, 242);
+    margin: 10px;
+    padding: 10px;
+    width: 1000px;
+}
+
+
+.d-flex5{
+    padding: 10px;
+    background-color: rgb(103, 255, 9);   
+    margin-bottom: 10px;
+    flex-direction: row;
+}
+.d-flex5{
+    display: flex;
+}
+.d-flex5>div{
+    background-color: rgb(255, 0, 242);
+    margin: 10px;
+    padding: 10px;
+    width: 1000px;
+}
+
+
+.d-flex6{
+    padding: 10px;
+    background-color: rgb(103, 255, 9);   
+    margin-bottom: 10px;
+    flex-direction: row-reverse;
+}
+.d-flex6{
+    display: flex;
+}
+.d-flex6>div{
+    background-color: rgb(255, 0, 242);
+    margin: 10px;
+    padding: 10px;
+    width: 1000px;
+    height: 100px;
+}
+
+
+.d-flex7{
+    padding: 10px;
+    background-color: rgb(103, 255, 9);   
+    margin-bottom: 10px;
+    flex-direction: column-reverse;
+}
+.d-flex7{
+    display: flex;
+}
+.d-flex7>div{
+    background-color: rgb(255, 0, 242);
+    margin: 10px;
+    padding: 10px;
+    width: 1000px;
+    
+}
+
+
+.d-flex8{
+    
+    background-color: rgb(72, 25, 151);   
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    /* align-items: center;
+    align-items: flex-start;
+    align-items: flex-end; */
+
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+
+    /* gap: 150px; */
+
+    row-gap: 50px;
+    column-gap: 150px;
+}
+
+.d-flex8{
+    display: flex;
+}
+.d-flex8>div{
+    background-color: rgb(253, 182, 250);
+    border: 2px solid black;
+    width: 500px;
+    height: 50px;
+}
+
+
+
+
+.d-flex9{
+    height: 400px;
+    
+    background-color: rgb(77, 184, 231);   
+    justify-content: space-between;
+}
+.d-flex9{
+    display: flex;
+}
+.d-flex9>div{
+    background-color: rgb(191, 123, 123);
+    padding: 10px;
+    width: 200px;
+}
+.d-flex9 div:nth-child(2){
+    background-color: white;
+    align-self: center;
+}
+.d-flex9 div:nth-child(3){
+    
+    align-self: flex-end;
+}
+
+
+.d-flex11{
+    height: 400px;
+    margin: 20px;
+    background-color: rgb(83, 193, 107);   
+    justify-content: space-between;
+}
+.d-flex11{
+    display: flex;
+}
+.d-flex11>div{
+    background-color: rgb(252, 158, 158);
+    padding: 10px;
+    width: 200px;
+}
+.d-flex11 div:nth-child(2){
+    order: 1;
+    background-color: white;
+    flex-grow: 1;
+}
+.d-flex11 div:nth-child(3){
+    order: 2;
+    background-color: rgb(214, 86, 86);
+    flex-grow: 2;
+}
+.d-flex11 div:nth-child(1){
+    order: 3;
+    background-color: rgb(188, 167, 167);
+    flex-grow: 3;
+}
