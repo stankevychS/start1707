@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+div.pos-abs{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(234, 163, 163);
+}
+div.pos-abs>div{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(122, 206, 172);
+}
+.block1{
+    top: 100px;
+
+}
+.block2{
+    top: 200px;
+
+}

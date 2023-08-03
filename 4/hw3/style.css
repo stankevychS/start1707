@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: rgb(216, 216, 216);
+    padding: 150px 250px;
+}
+.block1,
+.block2,
+.block3{
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    text-align: center;
+}
+/* 1 */
+.block1{
+    background-color: black;
+}
+.text-diya{
+    position: relative;
+    top: 144px;
+}
+.block1>div.flag-blue{
+    position: relative;
+    width: 80px;
+    height: 60px;
+    background-color: rgba(33, 55, 252, 1);
+    border-radius: 6px;
+    margin: auto;
+    top: 200px;
+    overflow: hidden;
+    top: 167px;
+}
+.flag-blue>.flag-yellow{
+    background-color: #FFD84B;
+    width: 80px;
+    height: 60px;
+    top: 30px;
+    position: relative;
+}
+/* 2 */
+.block2{
+    z-index: 10;
+    background-color: #FFCE22;
+    left: 680px;
+    top: 550px;
+    overflow: hidden;
+}
+.block2-blue{
+    left: 0px;
+    position: absolute;
+}
+.block2-wave{
+    position: relative;
+    top:144px;
+}
+/* 3 */
+.block3{
+    z-index: 1;
+    left: 1100px;
+    top: 965px;
+    
+    background-color: rgb(255, 255, 255);
+    border-top: 3px solid rgba(33, 55, 252, 1);
+    border-bottom:  3px solid rgba(33, 55, 252, 1);
+    box-shadow: 1px rgb(161, 161, 161);
+}
+.block3-yellow-circle{
+    background-color: #FFCE22;
+    border-radius: 444px;
+    width: 444px;
+    height: 444px;
+    position: relative;
+    top: 34px;
+    left: 34px;
+    overflow: hidden;
+}
+.block3-wave{
+    position: relative;
+    top:-200px;
+}
+.block3-blue-circle{
+    position: relative;
+    
+}
