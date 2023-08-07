@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100%;
+}
+.parallax{
+    min-height: 100%;
+    padding: 200px;
+    background-image: url("img/img13_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header, section{
+    background-color: white;
+    margin-bottom: 350px;
+    padding: 50px;
+}
