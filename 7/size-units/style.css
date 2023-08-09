@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    font-size: 10px;
+}
+/* EM = PARENT FONT-SIZE * EM
+    f-size: 10px =>  10em = 100px */
+
+/* REM = той самий em, але при зміні f-size  
+батьківського ел не міняється пропорційність 
+(зеалежить суто від f-size html,body)*/
+section{
+    background-color: yellow;
+    padding: 50px;
+    min-height: 100vh;
+    background-image: url("image 1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 1000px;
+}
+section div{
+    width: 50%;
+    background-color: blue;
+    padding: 10px;
+}
+img{
+    /* width: 598px;
+    height: 720px; */
+    /* width: 100%; */
+    height: 10vh;
+    width: auto;
+}
+p{
+    width: 10vw;
+}
+.p2{
+    margin-top: 10em;
+}
+@media screen and (max-width: 768px) {
+    p{
+        width: 40vw;
+    }
+    .p2{
+        margin-top: 1em;
+    }
+}

@@ -1,0 +1,43 @@
+:root{
+    --main-color: orange;
+    --title-size: 20px;
+    --decoration-color: darkblue;
+    --body-color: gray;
+    --title-color: rgb(203, 8, 8);
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    color: var(--main-color);
+    background-color: var(--body-color);
+}
+.decoration{
+    background-color: var(--decoration-color);
+    padding: 50px;
+}
+h3{
+    color: var(--title-color);
+    font-size: var(--title-size);
+}
+h4{
+    color: var(--title-color);
+    font-size: var(--title-size);
+    text-decoration: underline;
+}
+.super{
+    --title-size: 50px;
+    --title-color: rgb(213, 6, 255);
+    color: var(--title-color);
+    font-size: var(--title-size);
+}
+@media screen and (max-width: 768px) {
+    :root{
+        --main-color: rgb(255, 227, 176);
+        --decoration-color: rgb(98, 210, 255);
+        --body-color: rgb(246, 235, 235);
+        --title-color: rgb(118, 9, 9);
+    }
+}
