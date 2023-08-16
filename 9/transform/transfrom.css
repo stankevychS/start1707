@@ -1,0 +1,24 @@
+button{
+    padding: 10px 30px;
+    text-align: center;
+    background-color: black;
+    border-color: black;
+    color: white;
+    /* transition-delay: 5s; */
+    transition: all 2s;
+    transition-timing-function: ease;
+}
+button:hover{
+    background-color: yellow;
+    border-color: blue;
+    color: blue;
+    /* rotate: 60deg; */
+    scale: 2 2.5;
+    /* transform: rotateX(140deg); */
+    /* transform: skew(30deg, 15deg) */
+    transform: translate(50px, 100px);
+}
+.container{
+    width: 50%;
+    margin: 100px auto;
+}

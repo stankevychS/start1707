@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+$main-color: yellow;
+$main-color-second: green;
+header{
+    background-color: $main-color;
+    p{
+        color: blue;
+    }
+    &:hover{
+        background-color: $main-color-second;
+    }
+}
+:root{
+    --main-color1: #($main-color);
+    --main-color-second1: #($main-color-second);
+}
+@media screen and (max-width: 1000px){
+    :root{
+        --main-color1: pink;
+        --main-color-second1: red;
+    }
+}
+
+.btn{
+    padding: 20px;
+    text-align: center;
+}
+.red-btn{
+    background-color: red;
+    @extend .btn;
+    &:hover{
+        background-color: blue;
+    }
+}
+.green-btn{
+    background-color: green;
+    @extend .btn;
+}
+
+// ЦИКЛИ
+// @for $i from 1 through 10{
+//     .user-img:nth-child(#($i)){
+//         left:($i + 10px);
+//     }
+// }
